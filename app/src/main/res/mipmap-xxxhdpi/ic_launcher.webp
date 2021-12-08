@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <item name="android.graphics.text.LineBreaker android.graphics.text.LineBreaker.Result computeLineBreaks(android.graphics.text.MeasuredText, android.graphics.text.LineBreaker.ParagraphConstraints, int) 2">
+    <annotation name="androidx.annotation.IntRange">
+      <val name="from" val="0" />
+    </annotation>
+  </item>
+  <item name="android.graphics.text.LineBreaker.Builder android.graphics.text.LineBreaker.Builder setBreakStrategy(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{android.graphics.text.LineBreaker.BREAK_STRATEGY_SIMPLE, android.graphics.text.LineBreaker.BREAK_STRATEGY_HIGH_QUALITY, android.graphics.text.LineBreaker.BREAK_STRATEGY_BALANCED}" />
+    </annotation>
+  </item>
+  <item name="android.graphics.text.LineBreaker.Builder android.graphics.text.LineBreaker.Builder setHyphenationFrequency(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{android.graphics.text.LineBreaker.HYPHENATION_FREQUENCY_NORMAL, android.graphics.text.LineBreaker.HYPHENATION_FREQUENCY_FULL, android.graphics.text.LineBreaker.HYPHENATION_FREQUENCY_NONE}" />
+    </annotation>
+  </item>
+  <item name="android.graphics.text.LineBreaker.Builder android.graphics.text.LineBreaker.Builder setJustificationMode(int) 0">
+    <annotation name="androidx.annotation.IntDef">
+      <val name="value" val="{android.graphics.text.LineBreaker.JUSTIFICATION_MODE_NONE, android.graphics.text.LineBreaker.JUSTIFICATION_MODE_INTER_WORD}" />
+    </annotation>
+  </item>
+  <item name="android.graphics.text.LineBreaker.ParagraphConstraints float getDefaultTabStop()">
+    <annotation name="androidx.annotation.Px"/>
+    <annotation name="androidx.annotation.FloatRange">
+      <val name="from" val="0" />
+    </annotation>
+  </item>
+  <item name="android.graphics.text.LineBreaker.ParagraphConstraints float getFirstWidth()">
+    <annotation name="androidx.annotation.Px"/>
+    <annotation name="androidx.annotation.FloatRange">
+      <val name="from" val="0.0" />
+    </annotation>
+  </item>
+  <item name="android.graphics.text.LineBreaker.ParagraphConstraints float getWidth()">
+    <annotation name="androidx.annotation.Px"/>
+    <annotation name="androidx.annotation.FloatRange">
+      <val name="from" val="0.0" />
+    </annotation>
+  </item>
+  <item name="android.graphics.text.LineBreaker.ParagraphConstraints int getFirstWidthLineCount()">
+    <annotation name="androidx.annotation.Px"/>
+    <annotation name="androidx.annotation.IntRange">
+      <val name="from" val="0" />
+    </annotation>
+  </item>
+  <item name="android.graphics.text.LineBreaker.ParagraphConstraints void setIndent(float, int) 0">
+    <annotation name="androidx.annotation.Px"/>
+    <annotation name="androidx.annotation.FloatRange">
+      <val name="from" val="0.0" />
+    </annotation>
+  </item>
+  <item name="android.graphics.text.LineBreaker.ParagraphConstraints void setIndent(float, int) 1">
+    <annotation name="androidx.annotation.Px"/>
+    <annotation name="androidx.annotation.IntRange">
+      <val name="from" val="0" />
+    </annotation>
+  </item>
+  <item name="android.graphics.text.LineBreaker.ParagraphConstraints void setTabStops(float[], float) 1">
+    <annotation name="androidx.annotation.Px"/>
+    <annotation name="androidx.annotation.FloatRange">
+      <val name="from" val="0" />
+    </annotation>
+  </item>
+  <item name="android.graphics.text.LineBreaker.ParagraphConstraints void setWidth(float) 0">
+    <annotation name="androidx.annotation.Px"/>
+    <annotation name="androidx.annotation.FloatRange">
+      <val name="from" val="0.0" />
+    </annotation>
+  </item>
+  <item name="android.graphics.text.LineBreaker.Result float getLineAscent(int)">
+    <annotation name="androidx.annotation.Px"/>
+  </item>
+  <item name="androi
