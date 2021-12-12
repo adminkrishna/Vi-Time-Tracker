@@ -22,8 +22,6 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.vitimetracker.Adapter.CalendarAdapter;
-import com.example.vitimetracker.Adapter.EventAdapter;
-import com.example.vitimetracker.Event;
 import com.example.vitimetracker.JavaUtils.CalendarUtils;
 import com.example.vitimetracker.R;
 import com.example.vitimetracker.databinding.FragmentHomeBinding;
@@ -80,7 +78,6 @@ public class HomeFragment extends Fragment implements CalendarAdapter.OnItemList
     {
         calendarRecyclerView = root.findViewById(R.id.calendarRecyclerView);
         monthYearText = root.findViewById(R.id.monthYearTV);
-        eventListView = root.findViewById(R.id.eventListView);
 
         miniDate = root.findViewById(R.id.Fragment01MiniDate);
         miniMonthYear = root.findViewById(R.id.Fragment01MiniMonthYear);
