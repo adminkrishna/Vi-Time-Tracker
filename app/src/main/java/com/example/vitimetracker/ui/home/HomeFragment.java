@@ -9,8 +9,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -41,6 +43,7 @@ public class HomeFragment extends Fragment implements CalendarAdapter.OnItemList
     private TextView miniDate, miniMonthYear, miniDay;
     private ImageButton left, right;
     private TextView edit;
+    private Spinner spinner;
 
     private TextView monthYearText;
     private RecyclerView calendarRecyclerView;
@@ -67,11 +70,18 @@ public class HomeFragment extends Fragment implements CalendarAdapter.OnItemList
         initWidgets();
         setWeekView();
         setMiniView();
+        setItemAdapter();
 
         left.setOnClickListener(v -> previousWeekAction(v));
         right.setOnClickListener(v -> nextWeekAction(v));
 
         return root;
+    }
+
+    private void setItemAdapter() {
+        ArrayAdapter<CharSequence>adapter= ArrayAdapter.createFromResource(getContext(), R.array.entry_items, R.layout.spinner_item);
+//        adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        spinner.setAdapter(adapter);
     }
 
     private void initWidgets()
@@ -86,6 +96,8 @@ public class HomeFragment extends Fragment implements CalendarAdapter.OnItemList
         left = root.findViewById(R.id.Fragment01PreviousWeek);
         right = root.findViewById(R.id.Fragment01NextWeek);
         edit = root.findViewById(R.id.Fragment01Edit);
+
+        spinner = root.findViewById(R.id.Fragment01Spinner);
     }
 
     private void setWeekView()
